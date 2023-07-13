@@ -1,0 +1,98 @@
+button {
+  height: 50px;
+  width: 50px;
+  border: none;
+  color:#ffffff; 
+  background:#646464;
+  padding:10px;
+  border-radius:100%;
+  position:relative;
+  font-size:20px
+}
+
+button:active{
+  background-color: #969696;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.calculatorBox{
+  padding-top: 80px;
+  margin: 0 auto;
+  width: 250px;
+  // height: 400px;
+  background: #000000;
+  border-radius: 20px;
+}
+
+.outputBlock{
+  padding: 5px;
+  height: 70px;
+}
+
+.outputShort{
+  padding: 0px;
+  border: none;
+  font-size:60px;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  text-align:end;
+  background-color: #000000;
+  color: #ffffff;
+  text-overflow: ellipsis;
+}
+
+.outputLong{
+  padding: 0px;
+  border: none;
+  font-size:40px;
+  position: relative;
+  width: 100%;
+  text-align: end;
+  background-color: #000000;
+  color: #ffffff;
+  text-overflow: ellipsis;
+}
+
+.row {
+  clear: both;
+  margin: 5px; 
+  position: relative;
+  height: 100%;
+}
+
+.col {
+  float: left;
+  margin: 5px; 
+  position: relative; 
+}
+
+.UAct button {
+  color:#000000; 
+  background:#c8c8c8;
+}
+
+.UAct button:active {
+  background-color: #dcdcdc
+}
+
+.MAct button {
+  color:#ffffff; 
+  background:#fa9605;
+}
+
+.MAct button:active {
+  color:#ffffff; 
+  background:#fabe69;
+}
+
+.MAct2 button {
+  color:#fa9605; 
+  background:#ffffff;
+}
+
+
+

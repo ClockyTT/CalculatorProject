@@ -1,0 +1,43 @@
+<div class="calculatorBox">
+    
+    <div class="outputBlock">
+
+        <input type = "text" name="curValue" class = "{{outputStyle}}" [(ngModel)]="currentS" readonly>
+
+    </div>
+
+    <div class="inputBlock">
+
+        <div class="row">
+            <div class="col"><div class="UAct"><button name="BClear" (click)="ActButtonClick('C')">{{cStat}}</button></div></div>
+            <div class="col"><div class="UAct"><button name="Opposite" (click)="ActButtonClick('opposite')">±</button></div></div>
+            <div class="col"><div class="UAct"><button name="BExt" (click)="ActButtonClick('extended')">ex</button></div></div>
+            <div class="col"><div class="{{divStyle}}"><button name="BDiv" (click)="ActButtonClick('/')">÷</button></div></div>
+        </div>
+        <div class="row">
+            <div class="col"><button name="B1" (click)="NumButtonClick('1')">1</button></div>
+            <div class="col"><button name="B2" (click)="NumButtonClick('2')">2</button></div>
+            <div class="col"><button name="B3" (click)="NumButtonClick('3')">3</button></div>
+            <div class="col"><div class="{{multStyle}}"><button name="BMult" (click)="ActButtonClick('*')">×</button></div></div>
+        </div>
+        <div class="row">
+            <div class="col"><button name="B4" (click)="NumButtonClick('4')">4</button></div>
+            <div class="col"><button name="B5" (click)="NumButtonClick('5')">5</button></div>
+            <div class="col"><button name="B6" (click)="NumButtonClick('6')">6</button></div>
+            <div class="col"><div class="{{diffStyle}}"><button name="BDiff" (click)="ActButtonClick('-')">-</button></div></div>
+        </div>
+        <div class="row">
+            <div class="col"><button name="B7" (click)="NumButtonClick('7')">7</button></div>
+            <div class="col"><button name="B8" (click)="NumButtonClick('8')">8</button></div>
+            <div class="col"><button name="B9" (click)="NumButtonClick('9')">9</button></div>
+            <div class="col"><div class="{{sumStyle}}"><button name="BSum" (click)="ActButtonClick('+')">+</button></div></div>
+        </div>
+        <div class="row">
+            <div class="col"><button name="B0" (click)="NumButtonClick('0')">0</button></div>
+            <div class="col"><button name="BDot" (click)="NumButtonClick('.')">.</button></div>
+            <div class="col"><button name="BEql" (click)="ActButtonClick('=')">=</button></div>
+        </div>
+        <div class="row"></div>
+    </div>
+
+</div>
