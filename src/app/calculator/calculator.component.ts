@@ -15,7 +15,7 @@ export class CalculatorComponent {
   multStyle: string = 'MAct';
   diffStyle: string = 'MAct';
   sumStyle: string = 'MAct';
-  outputStyle: string = 'outputLong';
+  outputStyle: string = 'outputShort';
 
   NumButtonClick(val: string): void {
     if (((this.currentN ** 2) ** 0.5).toString().length < 9) {
@@ -35,7 +35,7 @@ export class CalculatorComponent {
           return;
         }
       }
-
+      this.dynamicFontSize();
       this.currentN = Number(this.currentS);
       this.cStat = 'C';
     }
@@ -92,6 +92,7 @@ export class CalculatorComponent {
         }
         break;
     }
+    this.dynamicFontSize();
   }
 
   calculate(op1: number, op2: number, act: string): void {
@@ -123,5 +124,20 @@ export class CalculatorComponent {
     this.multStyle = 'MAct';
     this.diffStyle = 'MAct';
     this.sumStyle = 'MAct';
+  }
+
+  dynamicFontSize(){
+    let d = 6;
+    if (this.currentS.includes(',')) {
+      d++;
+    }
+    if (this.currentS.includes('-')) {
+      d++;
+    }
+    if(this.currentS.length < d) {
+      this.outputStyle = 'outputShort';
+    } else {
+      this.outputStyle = 'outputLong';
+    }
   }
 }
