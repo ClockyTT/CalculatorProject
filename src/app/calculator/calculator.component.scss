@@ -1,13 +1,14 @@
 button {
-  height: 50px;
-  width: 50px;
-  border: none;
+  height:50px;
+  width:50px;
+  border:none;
   color:#ffffff; 
   background:#646464;
   padding:10px;
   border-radius:100%;
   position:relative;
-  font-size:20px
+  font-size:20px;
+  font-weight:normal;
 }
 
 button:active{
@@ -22,7 +23,6 @@ button:hover{
   padding-top: 80px;
   margin: 0 auto;
   width: 250px;
-  // height: 400px;
   background: #000000;
   border-radius: 20px;
 }

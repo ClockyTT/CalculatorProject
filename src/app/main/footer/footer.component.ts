@@ -5,4 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent {}
+export class FooterComponent {
+  gmailClick(){
+
+  }
+
+  telegramClick(){
+
+  }
+
+  phoneClick(){
+    
+  }
+}
